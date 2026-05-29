@@ -50,6 +50,8 @@ This creates:
 dist\JulianToday.exe
 ```
 
+The Windows build embeds icon and Details-tab metadata from `assets/calendar-icon.ico` and `version_info.txt`.
+
 macOS:
 
 ```bash

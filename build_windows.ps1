@@ -43,6 +43,7 @@ Invoke-Checked $Python -m PyInstaller `
     --windowed `
     --name "JulianToday" `
     --icon (Join-Path $Root "assets\calendar-icon.ico") `
+    --version-file (Join-Path $Root "version_info.txt") `
     --add-data "$(Join-Path $Root 'assets\calendar-icon.png');assets" `
     --hidden-import "pystray._win32" `
     (Join-Path $Root "julian_tray.py")
